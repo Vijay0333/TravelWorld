@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+  font-family: poppins;
+  }
+  video-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  min-height: 100%;
+  }
+  .wrapper{
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background:  rgba(85, 119, 120, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .form{
+    padding: 90px 60px;
+  }
+
+  .wrapper .btn-area{
+    height: 40px;
+width: 80%;
+background-color: #ef4366;
+border-radius: 60px;
+text-align: center;
+font-weight: bold;
+color: #fff;
+margin-top: 20px;
+cursor: pointer;
+line-height: 45px;
+}.wrapper input{
+    border-radius: 50px;
+  font-size: 15px;
+  height: 40px;
+border: none;
+padding-left: 15px;
+width: calc(100% - 15px);
+margin-bottom: 10px;
+background: rgba(0,0,0,0.8); 
+color: #fff ;}
+
+
+.form a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+
+body{
+    /* Set the background image URL */
+    background-image: url(images/LR4.jpg);
+
+    /* Set the background size (cover or contain, or specific dimensions) */
+    background-size: cover;
+
+    /* Set the background position (center, top, right, bottom, left, or specific coordinates) */
+    background-position: center;
+
+    /* Set the background repeat (no-repeat, repeat-x, repeat-y, repeat) */
+    background-repeat: no-repeat;
+
+    /* Optionally, set the width and height of the element */
+    width: 300px;
+    height: 200px;
+
+    /* Optionally, set other styles like border-radius, box-shadow, etc. */
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+
+    </style>
+<meta charset="UTF-8">
+<title>Transparent login form with video background</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  
+<div class="wrapper">
+<div class="form" >
+  
+    <form action="/signup" method="post">
+      <h2>Sign -Up</h2>
+     
+<input type="email"  name="email" placeholder="Enter your Eamil">
+<input type="text"  name="name" placeholder="Enter your Name">
+<input type="number"  name="number" placeholder="Enter your Number">
+<input type="password" name="password" placeholder="Enter your Password">
+<input type="Submit" class="btn-area">
+<h2><a href="login.ejs">log in</a></h2>
+
+</form>
+</div>
+    </div>
+</body>
+</html>
